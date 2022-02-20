@@ -10,10 +10,12 @@
 }
 
 body{
-    background-image: url(background.jpg);
+    background-color: black;
+    background-image: url(Logo.svg);
+    background-size: 600px 290.32px;
+    background-position-x: center;
+    background-position-y: 400px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .conteiner{
@@ -24,15 +26,16 @@ body{
 }
 
 .box{
-    background: #fff7;
+    background-color: rgba(255, 255, 255, .1);
     padding: 30px;
     border-radius: 4%;
-    box-shadow: 4px 3px 1px 0px #000b2380;
+    box-shadow: 4px 3px 1px 0px #00000005;
+    backdrop-filter: blur(10px);
 }
 
 h1{
     padding: 7px;
-    color: #000b23;
+    color: #18709b;
     text-align: center;
 }
 
@@ -41,7 +44,8 @@ h1{
     padding: 5px 5px;
     display: inline-block;
     border: 0;
-    border-bottom: 2px solid #000b23;
+    border-bottom: 2px solid white;
+    color: #34b9f9;
     background-color: transparent;
     outline: none;
     min-width: 180px;
@@ -58,11 +62,11 @@ h1{
 }
 
 .label-float input:focus{
-    border-bottom: 2px solid #002b56;
+    border-bottom: 2px solid #18709b;
 }
 
 .label-float label{
-    color: #000b23;
+    color: #34b9f9;
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -75,7 +79,7 @@ h1{
 .label-float input:valid + label{
     font-size: 13px;
     margin-top: 0;
-    color: #002b56;
+    color: #18709b;
 }
 
 img{
@@ -87,10 +91,15 @@ img{
     cursor: pointer;
 }
 
+.eye img{
+    color: #18709b;
+}
+
 button{
     padding: 5px;
     background-color: transparent;
-    border-color: #000b23;
+    border-color: #34b9f9;
+    color: #34b9f9;
     font-size: 12pt;
     border-radius: 4px;
     margin-top: 15px;
@@ -99,19 +108,21 @@ button{
 }
 
 button:hover{
-    background-color: #00102c;
-    color: #fff;
+    background-color: #18709b;
+    border-color: #18709b;
+    color: #ffffff;
+    transition: all .5s ease-out;
 }
 
 .newacount{
     margin-top: 3px;
-    color: #000b23;
+    color: #34b9f9;
     padding-top: 5px;
 }
 
 a{
     text-decoration: none;
-    color: #003560;
+    color: #18709b;
 }
 
 a:hover{
